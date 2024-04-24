@@ -1,0 +1,57 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+.item {
+  position: relative;
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.item:hover {
+  transform: rotateY(180deg);
+}
+.item:hover .back {
+  transform: rotateY(180deg);
+  opacity: 1;
+  backface-visibility: visible;
+}
+.item:hover .front {
+  transform: rotateY(180deg);
+}
+.front {
+  opacity: 1;
+  backface-visibility: hidden;
+}
+
+.back {
+  opacity: 0;
+  backface-visibility: hidden;
+}
+
+.item-1 {
+  background-color: orange;
+}
+.item-2 {
+  background-color: yellowgreen;
+}
+.item-3 {
+  background-color: blueviolet;
+}
+.item-4 {
+  background-color: palevioletred;
+}
+.item-5 {
+  background-color: royalblue;
+}
+.item-6 {
+  background-color: goldenrod;
+}
